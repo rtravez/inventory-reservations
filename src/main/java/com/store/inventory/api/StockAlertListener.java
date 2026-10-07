@@ -1,7 +1,7 @@
 package com.store.inventory.api;
 
 /**
- * Receives low stock alerts. Do not modify this file.
+ * Receives low-stock alerts. Do not modify this file.
  */
 public interface StockAlertListener {
 

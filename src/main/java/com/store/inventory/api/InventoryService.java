@@ -13,15 +13,15 @@ public interface InventoryService {
     /**
      * Adds units of a registered product to the warehouse.
      *
-     * @throws IllegalArgumentException if quantity is zero or negative, or the product is not registered
+     * @throws IllegalArgumentException if the quantity is zero or negative, or the product is not registered
      */
     void addStock(String sku, int quantity);
 
     /**
      * Reserves units of a product for an order. Each order reserves a single product.
-     * The reservation expires according to the product category unless it is confirmed.
+     * The reservation expires, according to the product category, unless it is confirmed.
      *
-     * @throws IllegalArgumentException if quantity is zero or negative
+     * @throws IllegalArgumentException if the quantity is zero or negative
      * @throws OrderLimitExceededException if the category does not allow that many units per order
      * @throws InsufficientStockException if there are not enough available units (unknown products have none)
      */
